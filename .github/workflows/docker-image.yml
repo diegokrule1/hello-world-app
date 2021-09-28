@@ -21,7 +21,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Build the Docker image
-        run: docker build . --file Dockerfile --tag diegokrule/eko/hello-world-go-training:1.0
+        run: docker build . --file Dockerfile --tag diegokrule/eko:1.0
 
       - name: Push Docker images
         uses: docker/build-push-action@v1
